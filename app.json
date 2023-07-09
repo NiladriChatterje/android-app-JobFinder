@@ -5,6 +5,14 @@
       "bundler": "metro"
     },
     "name": "j-it",
-    "slug": "j-it"
+    "slug": "j-it",
+    "extra": {
+      "eas": {
+        "projectId": "a0df7370-4f52-4a59-8fde-6b217675e90d"
+      }
+    },
+    "android": {
+      "package": "com.niladrichatterjee.jit"
+    }
   }
 }
