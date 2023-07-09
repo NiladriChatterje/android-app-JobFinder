@@ -18,9 +18,10 @@ const styles = StyleSheet.create({
     marginTop: 2,
   },
   searchContainer: {
-    justifyContent: "center",
+    justifyContent: "space-between",
     alignItems: "center",
     flexDirection: "row",
+    gap: 5,
     marginTop: SIZES.large,
     height: 50,
   },
@@ -34,9 +35,10 @@ const styles = StyleSheet.create({
     height: "100%",
   },
   searchInput: {
-    fontFamily: FONT.regular,
-    width: "100%",
+    width: "90%",
     height: "100%",
+    backgroundColor: '#EEEEEE',
+    borderRadius: 10,
     paddingHorizontal: SIZES.medium,
   },
   searchBtn: {
@@ -44,6 +46,7 @@ const styles = StyleSheet.create({
     height: "100%",
     backgroundColor: COLORS.tertiary,
     borderRadius: SIZES.medium,
+    elevation: 10,
     justifyContent: "center",
     alignItems: "center",
   },

@@ -10,13 +10,13 @@ import {
   Welcome,
 } from "../components";
 
-const Home = () => {
+const Home = ({ inputName, toggle }) => {
   const router = useRouter()
   const [searchTerm, setSearchTerm] = useState("");
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
-      <Stack.Screen
+      {!toggle && <Stack.Screen
         options={{
           headerStyle: { backgroundColor: COLORS.lightWhite },
           headerShadowVisible: false,
@@ -31,7 +31,7 @@ const Home = () => {
           ),
           headerTitle: "",
         }}
-      />
+      />}
 
       <ScrollView showsVerticalScrollIndicator={false}>
         <View
@@ -41,6 +41,7 @@ const Home = () => {
           }}
         >
           <Welcome
+            inputName={inputName}
             searchTerm={searchTerm}
             setSearchTerm={setSearchTerm}
             handleClick={() => {

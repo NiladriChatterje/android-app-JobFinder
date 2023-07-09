@@ -14,14 +14,15 @@ import { icons, SIZES } from "../../../constants";
 
 const jobTypes = ["Full-time", "Part-time", "Contractor", "Freelancer", "internships", "Volunteer", "Temporary"];
 
-const Welcome = ({ searchTerm, setSearchTerm, handleClick, name }) => {
+
+const Welcome = ({ searchTerm, setSearchTerm, handleClick, inputName }) => {
   const router = useRouter();
   const [activeJobType, setActiveJobType] = useState("Full-time");
 
   return (
     <View>
       <View style={styles.container}>
-        <Text style={styles.userName}>Hello Niladri</Text>
+        <Text style={styles.userName}>Hello {inputName}</Text>
         <Text style={styles.welcomeMessage}>Find your job here!</Text>
       </View>
 
